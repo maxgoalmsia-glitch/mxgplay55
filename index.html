@@ -170,10 +170,7 @@
 <script>
   // Affiliate tracking: read ?aff= from this landing URL and pass it as affid to the register page.
   (function(){
-    var params = new URLSearchParams(window.location.search);
-    var aff = params.get('aff') || '55';               // default affiliate id
-    var base = 'https://www.maxgoalplay.com/en-my/register';
-    document.getElementById('cta').setAttribute('href', base + '?affid=' + encodeURIComponent(aff));
+    document.getElementById('cta').setAttribute('href', 'https://www.maxgoalplay.com/en-my/register?affid=55');
   })();
 </script>
 </body>
